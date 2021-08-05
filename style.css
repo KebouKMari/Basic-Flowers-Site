@@ -1,0 +1,265 @@
+html{
+	scroll-behavior: smooth;
+}
+
+body{
+	margin: 0 auto ;
+}
+section .landing-page {
+	background-size: cover;
+	background-position:center ;
+	height: 400px;
+	width: 100%;
+	display: block;
+	background-image: url(images/violet.jpg);
+}
+
+section header img{
+	width: 70px;
+	height:70px;
+	border-radius: 8px;
+
+}
+
+/* le menu de navigation */
+	
+li{
+	list-style: none;
+	display: inline-block;
+	margin-right: 23px;
+	margin-left: 33px;
+}
+.nav a{
+	text-decoration: none;
+	color: white;
+	font-family:cursive ;
+}
+header{
+	display: flex;
+	align-items: center;
+	background-color: #3b3667;
+	color: white;
+	justify-content: space-between;
+	
+}
+section .landing-page .slogan p{
+	font-size: 70px;
+	font-family: cursive;
+	margin-top: 20px;
+	color:white ;
+	margin-bottom: 0px;
+
+}
+section .landing-page .slogan{
+	padding: 20px 50px;
+	padding-top:100px;
+	text-align: center;	
+}
+section .landing-page a{
+	margin-left: 50px;
+	color:#3b3667 ;
+	text-decoration: none;
+	position: absolute;
+    margin-top: 100px;
+}
+
+.service{
+	display: flex;
+	color: #3b3667;
+	align-items: center;
+	justify-content: space-between;
+	margin: 50px;
+}
+.service-item{
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	font-weight: bold;
+}
+
+.best-item .title{
+	margin-left: 50px;
+	font-weight: bold;
+	font-size: 35px;
+	margin-bottom: 0px;
+}
+
+.service .service-item .service-details{
+	width: 125px;
+	align-items: center;
+}
+
+.best-item .barre{
+	width: 55px;
+	height: 7px;
+	background-color: green;
+	margin-left: 50px;
+	border-radius: 4px;
+	margin-bottom: 0px;
+}
+
+.items{
+	display: flex;
+	margin: 50px;
+	min-height: 200px;
+	flex-wrap: wrap;
+}
+
+.items .item1,.item2,.item3,.item4{
+	min-width: 200px;
+	min-height: 200px;
+	flex: 1;
+	position: relative;
+}
+
+.item1{
+	background-image: url(images/p1.jpg);
+	background-size: cover;
+	background-position:center
+}
+
+.item2{
+	background-image: url(images/p2.jpg);
+	background-size: cover;
+	background-position:center
+}
+
+.item3{
+	background-image: url(images/p3.jpg);
+	background-size: cover;
+	background-position:center
+}
+
+.item4{
+	background-image: url(images/p4.jpg);
+	background-size: cover;
+	background-position:center
+}
+
+.item-details{
+	background-color: #F5F2ED;
+	opacity: 0.8;
+	position: absolute;
+	bottom: 0;
+	width:350px;
+	height: 70px;
+}
+
+.item-nom{
+	font-weight: bold;
+	font-size: 20px;
+	line-height: 4px;
+	padding-top: 10px;
+	padding-left: 10px;
+}
+
+.item-price{
+	font-weight: bold;
+	font-size: 15px;
+	line-height: 4px;
+	color: green;
+	padding-left: 10px;
+	padding-bottom: 10px;
+}
+
+.grille-plant1{
+	background-image: url(images/p1.jpg);
+	background-size: cover;
+	background-position: center;
+	grid-column: 1/3;
+	grid-row: 1/3;
+	position: relative;
+}
+.grille-plant2{
+	background-image: url(images/p4.jpg);
+	background-size: cover;
+	background-position: center;
+	grid-column: 3/5;
+	position: relative;
+}
+.grille-plant3{
+	background-image: url(images/p3.jpg);
+	background-size: cover;
+	background-position: center;
+	grid-column: 3/5;
+	position: relative;
+}
+.grille-plant4{
+	background-image: url(images/p5.jpg);
+	background-size: cover;
+	background-position: center;
+	grid-column: 1;
+	grid-row: 3/5;
+	position: relative;
+}
+.grille-plant5{
+	background-image: url(images/p2.jpg);
+	background-size: cover;
+	background-position: center;
+	grid-column: 2/4;
+	grid-row: 3/5;
+	position: relative;
+}
+.grille-plant6{
+	background-image: url(images/p6.jpg);
+	background-size: cover;
+	background-position: center;
+	grid-column: 1/3;
+	grid-column: 4;
+	grid-row: 3/5;
+	position: relative;
+}
+
+.grille{
+	display: grid;
+	min-height: 30vh;
+	margin: 50px;
+	grid-template-columns: repeat(4, 1fr);
+	grid-template-rows: repeat(4, 200px);
+	flex-wrap: wrap;
+}
+
+.plants-details{
+	background-color: #F5F2ED;
+	opacity: 0.7;
+	position: absolute;
+	bottom: 0;
+	width:100%;
+	height: 60px;
+}
+
+.plants-details .plants-nom{
+	font-weight: bold;
+	font-size: 20px;
+	line-height: 3px;
+	padding-top: 8px;
+	padding-left: 30px;
+}
+
+.plants-details .plants-prix{
+	font-weight: bold;
+	font-size: 15px;
+	line-height: 3px;
+	color: green;
+	padding-left: 30px;
+	padding-bottom: 10px;
+}
+
+footer{
+	display: flex;
+	justify-content: space-between;
+	margin: 50px;
+	margin-bottom: 2px;
+	font-weight: bold;
+}
+
+footer a{
+	text-decoration: none;
+	color: black;
+	padding-top: 15px;
+
+}
+
+footer .contact i{
+	padding: 5px;
+}
